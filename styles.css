@@ -1,0 +1,612 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238) 0%,;
+    color: #232323;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #232323;
+    }
+    .navbar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo0 {
+      color: white;
+      /* Adjust width and styling as needed */
+    }
+    
+    .hamburger {
+      /* Other styles remain the same */
+      order: 2; /* Moves the hamburger to the right */
+    }
+    
+    .container5 {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .navbar {
+      background-color: transparent;
+      padding: 15px 0;
+    }
+    
+    .navbar-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+    }
+    
+    .navbar-menu li {
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .navbar-menu li a {
+      color: black;
+      text-decoration: none;
+    }
+    .content-container a{
+      color: #6f42c1;
+    }
+    
+    .hamburger {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .bar {
+      background-color:black;
+      height: 5px;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+    
+    #menu.active {
+      display: block;
+    }
+    header {
+        background-image: url(/assets/images/IMG_5054.jpg);
+        background-size: cover;
+        background-position: center; 
+        position: relative;
+        height: 70vh;    
+        display: flex;   
+        align-items: center;  
+        justify-content: flex-end; 
+      }
+      
+      .header-content {
+        margin: 20px; 
+      }
+      
+      .intro-card {
+        background-color: white;
+        border-radius: 5%;
+        
+        padding: 30px;
+        text-align: center;
+        position: absolute; /* Makes the card absolute positioned */
+        top: 50%; /* Positions the card vertically at 50% */
+        left: 50%; /* Positions the card horizontally at 50% */
+        transform: translate(-50%, -50%); /* Adjusts position for centering */
+        background: #fff;
+        border-radius: 8px;
+        padding: 24px 32px;
+        margin-bottom: 64px;
+      }
+
+     
+      
+      h1 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        
+      }
+      
+      .large {
+        font-size: 0.9rem; /* Adjust font size for larger text */
+      }
+      button{
+        background-color: #232323;
+        color: white;
+        padding: 5px;
+        border: #ffc52b;
+        border-radius: 5%;
+        cursor: pointer;
+        margin: 10px;
+      }
+     button:hover{
+      background-color: #ffc52b;
+      color: black;
+     }
+      .logo-section {
+        background-color: #ffc52b;
+        
+        justify-content: center;
+        height: 20vh; 
+        overflow-x: hidden;  /* Allows horizontal scrolling within the section*/
+        padding: 20px 0; 
+        
+        
+      }
+      
+      
+      .logo-scroller { 
+        display: flex;
+        width: calc(9 * 150px); /* Assuming cards are 150px wide, adjust as needed */
+        animation: scroll 20s linear infinite; /* Adjust duration as needed */
+      }
+      
+      .card {
+        width: 150px; /* Adjust as needed */
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 5%; /* Adds a border radius */
+        text-align: center; /* Centers the logo within the card */
+        padding: 15px; /* Add padding around the logo */
+        align-items: center;
+        
+      }
+      
+      .card img {
+        max-width: 100%; /* Adjust to fit logo image sizing */ 
+        display: block;
+        margin: 0 auto; /* Centers the logo image horizontally */
+      }
+      
+      /* Animation Adjustment */
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-150px * 10)); } /* Increase the negative translateX amount */
+      }
+      .card-section {
+        height: 100vh;
+        background-color: rgb(238, 238, 238); /* No need for 0% here */
+        display: flex;
+        align-items: center;
+        justify-content: space-around; /* Equally spaces the cards */
+        padding: 20px;
+      }
+      
+      .card2 {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        flex: 0 0 30%; /* Allow cards to shrink if necessary */
+        max-width: 30%; /* Limit card width in larger screens */
+        box-sizing: border-box; /* Include padding and border within width calculation */
+        position: relative;  
+        min-height: 300px;
+        padding-bottom: 20px;
+        width: 300%;
+        transition: transform 0.2s ease-in-out;
+    }
+    .card2:hover{
+      transform: scale(1.1); /* Increase scale on hover */
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+      
+      .card2 img {
+        max-width: 100%; 
+        height: auto;  
+        margin-bottom: 15px;
+        object-fit: cover;
+        
+        
+      }
+      .card2 h3{
+        font-weight: bold;
+        font-size: large;
+      }
+      .view-images-btn {
+        position: absolute;
+        bottom: 15px;      /* Adjust bottom padding as needed */
+        right: 15px;       /* Adjust right padding as needed */
+        background-color: #ffc52b; /* Sample color */
+        color: white;  
+        padding: 8px 15px; 
+        border: none;
+        border-radius: 5px; 
+        text-decoration: none;  
+        display: inline-block;
+      }
+      .button-container {
+        text-align: right; /* Right-align the button within the container */
+      }
+      
+      .arrow {
+        margin-left: 5px;
+      }
+      /* Mobile view adjustments */
+      
+      .about-section2 {
+        /* ... other styles for the section */
+        padding: 50px;
+        height: 100vh;
+        flex-wrap: wrap; /* Stack cards in a column */
+        align-items: center;
+         /* Add padding to distance content from edges */
+      }
+      
+      .about-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center; /* Add space between title and paragraph */
+        /* Remove centering styles */
+        /* position: absolute;   /* Optional absolute positioning */
+        /* top: 50px;              /* Optional positioning from top */
+        /* left: 50%;             /* Optional positioning from left */
+        /* transform: translate(-50%, -50%);  /* Optional centering */
+      }
+      
+      .about-text {
+        box-sizing: border-box; /* Ensure padding/border doesn't affect width */
+        max-width: 100%; /* Limit text width on larger screens */
+        margin: 0 10px; /* Add some margin for better spacing */
+      }
+      
+     
+      footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center; /* Default to center alignment */
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between; /* Space between left and right content */
+        align-items: center; /* Vertical alignment */
+        margin-bottom: 10px; /* Add spacing below social links */
+      }
+      
+      .social-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      
+      .copyright {
+        font-size: 0.9em; 
+        color: white;
+      }
+      .left-text{
+        color: white;
+
+      }
+      .skills {
+        background-color: #00c081;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .skills h2 {
+        margin-bottom: 20px;
+      }
+      
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .skills-container button {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .skills-container button:hover {
+        background-color: #fff;
+        color: #00c081;
+      }
+
+      .form-card {
+       
+        background-color: white;
+      
+        border-radius: 3%;
+        padding: 25px;
+        margin: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for subtle shadow */
+      }
+      #cont{
+        text-align: center;
+      }
+      
+      
+      .input-group {
+        margin-bottom: 10px;
+      }
+      
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .input-group input[type="text"], 
+      .input-group input[type="email"], 
+      .input-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        background-color: yellow;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .quote-section {
+        height: 60vh;
+        background-color: #6f42c1;
+        padding: 20px;
+        display: flex; /* Center content using flexbox */
+        align-items: center; /* Vertically center content */
+        justify-content: center; /* Horizontally center content */
+        text-align: center; /* Ensure centered text */
+      }
+      
+      .quote-section p {
+        font-style: italic; /* Apply italics to the quote */
+        font-size: 1.5em; /* Adjust font size as needed */
+        font-weight: lighter; /* Make the font lighter for a more delicate appearance */
+        color: white; /* Text color to contrast with the background */
+        margin: 0; /* Remove default margin for better spacing */
+      }
+      .about-section {
+        padding: 20px;
+      }
+      
+      .banner-container {
+        height: 70vh; /* 50% of the viewport height */
+         /* Necessary for absolute positioning of content */
+      }
+      
+      .banner-container img {
+        width: 100%; /* Full width of the container */
+        height: 100%; /* Full height of the container */
+        object-fit: cover; /* Ensure image covers container */
+      }
+      
+      .content-container {
+       /* Positioned on top of the banner with padding */
+        top: 50%;
+         /* Center vertically within the banner */
+        width: 100%; /* Adjust width as needed */
+        text-align: left; /* Center text for responsiveness */
+        color: white; /* Ensure text is visible on top of the image */
+        background-color: rgb(238, 238, 238) 0%,; /* Semi-transparent background for easy reading */
+        padding: 20px;
+        height: auto;
+      }
+      #abt{
+        text-align: center;
+      }
+      .card-carousel {
+        background-color: #ffc52b;
+        height: 50vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+      
+      .card-wrapper {
+        display: inline-flex;
+        gap: 20px;
+        padding: 20px;
+        
+      }
+      
+      .card-item {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 25px 20px;
+        min-width: 200px; /* Adjust as needed */
+        text-decoration: none;
+        color: black;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        justify-content: space-around;
+      }
+      
+      .card-item:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      .photo-collage {
+        display: flex;
+        flex-wrap: wrap; /* Allow for wrapping to multiple lines */
+        gap: 10px; /* Spacing between images */
+        margin: 20px; /* Add some margin for better spacing */
+      }
+      
+      .photo-collage img {
+        width: 32%; /* Adjust width as needed for 3 columns */
+        height: auto; /* Maintain aspect ratio */
+        
+      }
+      .video-portfolio {
+        display: flex;
+        flex-wrap: wrap; /* Allow for wrapping to multiple rows */
+        justify-content: space-between; /* Space items evenly */
+        gap: 20px; /* Spacing between video items */
+        margin: 20px; /* Add some margin for better spacing */
+      }
+      
+      .video-item {
+        width: calc(33% - 20px); /* Adjust width for 3 columns on larger screens */
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .video-thumbnail {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .video-thumbnail img {
+        width: 100%;
+        height: 500px; /* Adjust height as needed */
+        object-fit: cover; /* Ensure image covers container */
+      }
+      
+      .video-thumbnail i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: white;
+        opacity: 0.7;
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      .video-thumbnail:hover i {
+        opacity: 1;
+      }
+      
+      .video-info {
+        margin-top: 10px;
+      }
+      
+      .watch-on-youtube {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      .image-text-section {
+        display: flex;
+        flex-wrap: wrap; /* Allow content to wrap if needed */
+        width: 80%; /* Adjust width as needed */
+        margin: 0 auto; /* Center the section horizontally */
+        padding: 20px;
+      }
+      
+      .image {
+        width: 40%; /* Adjust image width as needed */
+        margin: 10px;
+      }
+      
+      .text-content {
+        flex: 1; /* Allow text content to grow */
+        padding: 10px;
+        background-color: #f5f5f5;
+      }
+      
+      /* Media query for mobile view (adjust breakpoint as needed) */
+      @media only screen and (max-width: 768px) {
+        .image-text-section {
+          flex-direction: column; /* Stack elements vertically */
+        }
+      
+        .image, .text-content {
+          width: 100%; /* Make elements full width */
+          margin: 0; /* Remove margins for cleaner stacking */
+        }
+      
+        .text-content {
+          order: 2; /* Ensure text appears below image on mobile */
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .video-item {
+          width: 100%; /* Full width on smaller screens */
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .photo-collage img {
+          width: 100%; /* Full width on smaller screens */
+        }
+      }
+      @media (max-width: 768px) {
+        .content-container {
+          width: 100%; /* Full width on smaller screens */
+          text-align: left; /* Left alignment on smaller screens */
+          background-color: white; /* Change background color for better readability on small screens */
+        }
+      }
+      /* Responsive layout for mobile views */
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center; /* Align items centrally */
+        }
+      
+        .social-links {
+          margin-bottom: 10px; /* Space between social links and copyright */
+        }
+      }
+      
+      @media (max-width: 768px) { 
+        .card-section {
+          box-sizing: border-box;
+            height: 100vh;
+            width: 100%;
+            
+          }
+        
+      
+        .card2 {
+          margin: 15px 0; /* Margin between cards when stacked */
+          flex: 1 0 auto; /* Allow cards to take up full width */
+          max-width: 100%; 
+        }
+      }
+      @media (max-width: 768px) {
+        .intro-card {
+          margin: 10px auto; /* Adjust margin for mobile */
+        }
+        .large {
+          font-size: 0.9rem; /* Adjust font size for smaller screens */
+        }
+      }
+      @media (max-width: 768px) {
+        .card-section {
+            height: auto; /* Remove fixed height */
+            display: flex;
+            flex-direction: row; /* Ensure cards are displayed in a row */
+            align-items: center;
+            justify-content: flex-start; /* Adjust alignment for better scrolling */
+            padding: 10px; /* Adjust padding for mobile */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        }
+    }

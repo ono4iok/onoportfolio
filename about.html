@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Onofiok</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+      <div class="container5">
+        <div class="navbar-header">
+            <div class="logo0">
+                <a href="index.html"><h1>Onofiok Ekong</h1></a>
+              </div>
+          <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <ul class="navbar-menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="videos.html">Videos</a></li>
+         
+        </ul>
+      </div>
+    </nav>
+</div>
+<script src="assets/js/script.js"></script>
+<section class="about-section">
+  <div class="banner-container">
+    <img src="assets/images/IMG_4509.JPG" alt="About Us Banner">
+  </div>
+  <div class="content-container">
+    <h1 id="abt">About Onofiok</h1>
+    <p>Introducing Onofiok Ekong, a dynamic professional with a unique blend of technical and managerial skills, and a deep commitment to the field of administration in the Development sector. Onofiok holds a Bachelor's degree in Chemical Engineering from the <a href="https://uniuyo.edu.ng/">University of Uyo</a>, Akwa Ibom State, and a Masters in Business Administration from <a href="https://abudlc.edu.ng/">Ahmadu Bello University</a>, Zaria, showcasing a strong foundation in both engineering and business management.
+
+      With over three years of hands-on experience in the Development sector, Onofiok has played pivotal roles within influential organizations. At <a href="https://griotstudios.org/">Griot Studios</a>, a non-governmental media company known for its innovative approach to creating and distributing multimedia and multi-platform content, Onofiok contributed significantly to projects spanning animation, interactive games, narrative fiction, and documentaries. His expertise helped in shaping and promoting diverse forms of media to a wider audience.
+      
+      Additionally, Onofiok's journey includes key roles at the <a href="https://pti.edu.ng/">Petroleum Training Institute</a>, an academic institution renowned for excellence in Engineering, Safety and Environmental Studies, Oil and Gas, Welding, Offshore Technology, and Computing. His work at this esteemed institute has furthered his understanding of these critical sectors and the development challenges they present.
+      
+      Outside of his professional pursuits, Onofiok's interests are equally diverse. He is passionate about videography, photography, video editing, and enjoys exploring new places through travel. His commitment to networking, research, volunteering, and advocating for meaningful causes exemplifies his dedication to personal and societal growth. This commitment to making a positive impact is further demonstrated by his being awarded a certificate of leadership from the <A href="https://ndlea.gov.ng/">National Drug Law Enforcement Agency (NDLEA)</A> for carrying out drug abuse sensitizations across secondary schools in Warri, Delta State during the 2017/2018 <a href="https://portal.nysc.org.ng/nysc1/">National Youth Service Corps (NYSC)</a> year.
+      
+      For today's presentation on "Plotting Your Path to Success: Preparing for University and Further Education," Onofiok Ekong brings a wealth of knowledge and experiences to inspire and guide students on their educational journeys. His commitment to bridging the gap between academic and practical knowledge makes him a valuable speaker for this occasion.
+      </p>
+  </div>
+</section>
+<section class="card-carousel">
+  <div class="card-wrapper">
+    <a href="leadership.html" class="card-item">
+      <img src="assets/images/leadership.png" alt="Leadership Icon">
+      <b>Leadership</b>
+    </a>
+    <div id="popup" class="popup">
+      <h2>View Resume in the Homepage</h2>
+      <button id="close-button" class="close-button">Close</button>
+    </div>
+  
+    <a href="#" class="card-item">
+      <img src="assets/images/WE.png" alt="Work Experience Icon">
+      Work Experience
+    </a>
+    <a href="#" class="card-item">
+      <img src="assets/images/CERT.png" alt="Certifications Icon">
+      Certifications
+    </a>
+    <a href="#" class="card-item">
+      <img src="assets/images/edu.png" alt="Education Icon">
+      Education
+    </a>
+    <a href="#" class="card-item">
+      <img src="assets/images/volunteer.png" alt="Education Icon">
+      Volunteering
+    </a>
+    <script>
+      const cardItems = document.querySelectorAll('.card-item');
+      const popup = document.getElementById('popup');
+      const closeButton = document.getElementById('close-button');
+  
+      cardItems.forEach(cardItem => {
+        cardItem.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent default anchor tag behavior (linking)
+          popup.style.display = 'block'; // Show the popup
+        });
+      });
+  
+      closeButton.addEventListener('click', () => {
+        popup.style.display = 'none'; // Hide the popup when close button is clicked
+      });
+  
+      // Optional: Close the popup when clicking outside of it
+      window.addEventListener('click', (event) => {
+        if (event.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+    </script>
+  </div>
+</section>
+<section class="quote-section">
+  <p>“I can do all this through him who gives me strength - Philippians 4:13"</p>
+</section>
+<footer>
+  <div class="footer-content">
+    <p class="left-text">Onofiok is here to serve</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/onofiok-ekong-93627341/">LinkedIn</a>
+      <a href="https://github.com/ono4iok">Github</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Email</a>
+      
+    </div>
+  </div>
+  <p class="copyright">Copyright 2024 Onofiok Ekong</p>
+</footer>
+    
+
+
+
+
+   
+</body>
+</html>
